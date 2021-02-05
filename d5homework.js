@@ -202,9 +202,23 @@ isTodayMyBDay(09-09-1988) */
    Write the function deleteProp that receives an object and a string, and returns the object after deleting the property with that given name.
 */
 
+/*
+console.log(me)
+const deleteProp = function(obj, str) {
+    delete obj.str
+    console.log(obj)
+}
+
+deleteProp(me, name)
+console.log(me)
+*/
+
+
 /* Ex.12 
     Write the function olderMovie that finds the older movie in the array.
 */
+
+
 
 /* Ex.13
     Write the function countMovies that returns the number of movies into the array.

@@ -72,31 +72,83 @@ me.skills.pop()
     Write the function dice that randomize an integer number between 1 and 6.
 */
 
+const dice = function() {
+    console.log(Math.floor(Math.random(1) * 7))
+}
+//dice()
+//dice()
+//dice()
+//dice()
+//dice()
+//dice()
+//dice()
+//dice()
+
 /* Ex.2 
     Write the function whoIsBigger that receives 2 numbers and returns the bigger of the two.
 */
+
+const whoIsBigger = function(a, b)  {
+  console.log(Math.max(a, b))  
+}
+//whoIsBigger(40, 9)
+
 
 /* Ex.3
     Write the function splitMe that receives a string and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns [ "I","Love","Coding"]
 */
 
+const splitMe = function(string) {
+    console.log(string.split(" "))
+}
+//splitMe("This was a string and now is an array")
+//splitMe("This is an example")
+
 /* Ex.4
     Write the function deleteOne that receives a string and a boolean. If the boolean is true it should return the string without the first letter, otherwise it should remove the last one.
 */
+
+const deleteOne = function(string, boolean) {
+    let mod = boolean? console.log(string.substring(1)) : console.log(string.substring(0, string.length - 1))
+
+}
+//deleteOne("this is a test", true)
+//deleteOne("this is a test", false)
+
 
 /* Ex.5
    Write the function onlyLetters that receives a string, removes all the numbers and returns it.
    Ex.: onlyLetters("I love 123 whatever")  => returns "I love whatever"
 */
 
+const onlyLetters = function(string) {
+    console.log (string.replace(/[0-9]/g, ""))
+}
+//onlyLetters("La multi an2i 2021")
+
+
 /* Ex.6 
    Write the function isThisAnEmail that receives a string and returns true if the string is a valid email.
 */
 
+const isThisAnEmail = function (string) {
+    console.log(string.includes("@"))
+}
+//isThisAnEmail("silviu.murgu@yahoo.com")
+//isThisAnEmail("silviu alexandru.com")
+
 /* Ex.7
    Write the function whatDayIsIt that should return the current day of the week.
 */
+
+const whatDayIsIt = function() {
+    const today = new Date()   // i create a variable with take curent day
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]   //i create an array with the day of the week.
+//i start with sunday because the .getDay() method return a number between 0-6
+    console.log(weekday[today.getDay()])
+}
+//whatDayIsIt()
 
 /* Ex.8
     Write the function rollTheDices that receives a numeric input.
@@ -107,13 +159,41 @@ me.skills.pop()
     }
 */
 
+//const rollTheDices = function(num) {
+//    let sum = 0
+//    let count = num
+//    const sumRolls = {
+//        sum: 0
+//        //values: [dice()]
+//    }
+//    console.log(sumRolls)
+//    //sumRolls.values.lenght = n
+//}
+//rollTheDices(2)
+//dice()
+
+
 /* Ex.9
    Write the function howManyDays that receives a date and returns the number of days that has passed since that day.
+*/
+/*const today = new Date(dateTime.getTime())
+date.setHours(0, 0, 0, 0,)
+console.log(today)
+return today
 */
 
 /* Ex.10
    Write the function isTodayMyBDay that returns true if it's your birthday, false otherwise.
 */
+
+/*const isTodayMyBDay = function(yourBD) {
+    const today = new Date()
+    let isToday = yourBD.getDate() === today.getDate() && yourBD.getMonth() === today.getMonth() && yourBD.getFullYear() === today.getFullYear()? true : false
+    console.log(isToday)
+} 
+
+isTodayMyBDay(09-09-1988) */
+
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of the file!
